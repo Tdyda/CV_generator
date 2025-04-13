@@ -1,0 +1,72 @@
+@media print {
+    .no-print,
+    .d-print-none {
+        display: none !important;
+    }
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: auto !important;
+        box-shadow: none !important;
+        background: white !important;
+        overflow: visible !important;
+    }
+
+    .wrapper {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        background: white !important;
+        box-shadow: none !important;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .sidebar-wrapper {
+        background: #4a6c78; /* kolor tła */
+        color: white;
+        height: 100vh;
+        page-break-inside: avoid;
+    }
+
+    .main-wrapper {
+        flex: 1;
+        padding-bottom: 40px;
+        page-break-inside: auto;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    footer {
+        page-break-inside: avoid;
+        background: white !important;
+        box-shadow: none !important;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    .page-break-section {
+        page-break-before: always;
+    }
+
+    .page-break-section > *:first-child {
+        margin-top: 50px !important;
+    }
+}
+
+.email {
+    white-space: nowrap;
+}
+
+.download-btn{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
